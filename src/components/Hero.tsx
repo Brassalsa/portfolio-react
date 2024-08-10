@@ -1,3 +1,4 @@
+import { navRoutes } from "@/lib/routes";
 import Container from "./ui/container";
 import IconComp from "./ui/icon";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
@@ -5,7 +6,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 function Hero() {
   return (
     <Container
-      id="hero"
+      id={navRoutes.portfolio.id}
       className="flex flex-col md:flex-row gap-4 md:gap-8 mt-5 items-center justify-center"
     >
       <div className="-mt-32">

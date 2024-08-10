@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider defaultTheme="dark">
       <Header />
-      <TracingBeam className="px-10 h-[90%]">
+      <TracingBeam className="px-10 h-full">
         <App />
       </TracingBeam>
     </ThemeProvider>
