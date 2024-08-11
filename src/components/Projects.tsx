@@ -8,7 +8,7 @@ function Projects() {
   return (
     <Container id={navRoutes.projects.id}>
       <Container.Heading>Projects</Container.Heading>
-      <Container.Description className="flex gap-5 flex-wrap mx-auto relative ">
+      <Container.Description className="flex gap-5 flex-wrap mx-auto relative justify-center">
         {projects.map((i) => (
           <PinContainer
             containerClassName="size-52 m-4"
