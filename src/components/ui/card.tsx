@@ -15,7 +15,7 @@ export function FancyCard({
   description,
 }: Props) {
   return (
-    <Card className="size-fit">
+    <Card className="">
       <CardSkeletonContainer>
         <Skeleton
           iconHref={iconHref}
@@ -23,8 +23,8 @@ export function FancyCard({
           iconContainerClassName={iconContainerClassName}
         />
       </CardSkeletonContainer>
-      <CardTitle>{title}</CardTitle>
-      <CardDescription>{description}</CardDescription>
+      <CardTitle className="">{title}</CardTitle>
+      <CardDescription className="">{description}</CardDescription>
     </Card>
   );
 }
@@ -39,7 +39,7 @@ const Skeleton = ({
   iconClassName,
   iconContainerClassName,
 }: SkeltonProps) => {
-  const scale = [1, 1.1, 1];
+  const scale = [1, 2, 1];
   const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
   const sequence = iconHref.map((_, ind) => [
     `.circle-${ind}`,
@@ -59,12 +59,13 @@ const Skeleton = ({
   }, []);
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
-      <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
+      <div className="flex flex-row flex-shrink-0 justify-center items-center gap-1">
         {iconHref.map((i, ind) => (
           <Container
-            className={cn("size-8", sequence[ind][0], iconContainerClassName)}
+            key={i}
+            className={cn("size-10", sequence[ind][0], iconContainerClassName)}
           >
-            <img className={cn("size-4", iconClassName)} src={i} />
+            <img className={cn("size-6", iconClassName)} src={i} />
           </Container>
         ))}
       </div>

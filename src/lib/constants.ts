@@ -144,6 +144,7 @@ type MediaLinks = {
   name: string;
   url: string;
   img: string;
+  light?: string;
 }[];
 
 export const mediaLinks: MediaLinks = [
@@ -151,6 +152,7 @@ export const mediaLinks: MediaLinks = [
     name: "GitHub",
     url: "https://github.com/Brassalsa",
     img: "/svg/github.svg",
+    light: "/svg/github-light.svg",
   },
   {
     name: "Facebook",
@@ -167,5 +169,6 @@ export const mediaLinks: MediaLinks = [
     name: "Twitter",
     url: "https://twitter.com/Sauravc64320635",
     img: "/svg/twitter.svg",
+    light: "/svg/twitter-light.svg",
   },
 ];
