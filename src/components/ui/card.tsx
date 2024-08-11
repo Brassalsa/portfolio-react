@@ -15,7 +15,7 @@ export function FancyCard({
   description,
 }: Props) {
   return (
-    <Card className="">
+    <Card className="h-[470px] relative">
       <CardSkeletonContainer>
         <Skeleton
           iconHref={iconHref}
@@ -59,7 +59,7 @@ const Skeleton = ({
   }, []);
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
-      <div className="flex flex-row flex-shrink-0 justify-center items-center gap-1">
+      <div className="flex flex-row flex-shrink-0 justify-center items-center gap-1 translate-y-6">
         {iconHref.map((i, ind) => (
           <Container
             key={i}

@@ -15,6 +15,7 @@ function Hero() {
           className="animate-[up-down_2s_infinite_alternate] 
           drop-shadow-[0_3px_2px_var(--foreground)]
           "
+          loading="eager"
         />
       </div>
       <div className="flex flex-col gap-1 group hover:cursor-default justify-center mt-0 md:-mt-32">

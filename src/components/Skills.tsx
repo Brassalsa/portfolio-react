@@ -27,13 +27,13 @@ function Skills() {
           iconHref={fullStack}
           title="Fullstack"
           description="Fullstack knwoledge in Next.js, MERN stack"
-          iconContainerClassName="scale-[300%] translate-y-6"
+          iconContainerClassName="scale-[300%]"
         />
         <FancyCard
           iconHref={otherSkills}
           title="Other Skills"
           description="Also know version control system like Git and Github."
-          iconContainerClassName="scale-[200%] m-4 translate-y-6 size-10 mx-6"
+          iconContainerClassName="scale-[200%] m-4 size-10 mx-6"
           iconClassName="size-6"
         />
       </Container.Description>
