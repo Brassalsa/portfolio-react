@@ -11,7 +11,7 @@ function Skills() {
   return (
     <Container id={navRoutes.skills.id}>
       <Container.Heading>Skills</Container.Heading>
-      <Container.Description className="flex gap-2 flex-wrap items-start">
+      <Container.Description className="flex gap-2 flex-wrap items-start ">
         <FancyCard
           iconHref={frontendSkills}
           title="Frontend"
@@ -33,7 +33,8 @@ function Skills() {
           iconHref={otherSkills}
           title="Other Skills"
           description="Also know version control system like Git and Github."
-          iconContainerClassName="scale-[200%] m-4 translate-y-6"
+          iconContainerClassName="scale-[200%] m-4 translate-y-6 size-10 mx-6"
+          iconClassName="size-6"
         />
       </Container.Description>
     </Container>
